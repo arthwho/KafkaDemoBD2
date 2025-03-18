@@ -33,9 +33,9 @@ Caso o seu Disco Local não seja particionado, e você apenas possua um, utilize
 
 # 2° Passo ->
 
-Download no site https://kafka.apache.org/downloads
+Download do arquivo Binário no site https://kafka.apache.org/downloads
 
-Extrair arquivo baixado e copiar o conteudo para D:\Kafka\application/Conteudo
+Extrair arquivo baixado e copiar o conteudo para D:\Kafka\application/
 
 ---
 
@@ -72,7 +72,7 @@ Editar arquivo D:\Kafka\application\config\server2.properties
 
         broker.id=2
 
-- Descomentar a linha e setar porta 9093 para o server1
+- Descomentar a linha e setar porta 9093 para o server2
 
         listeners=PLAINTEXT://:9093
 
