@@ -50,38 +50,47 @@ copiar arquivo server.properties e colar duas vezes o mesmo conteudo e renomear 
 
 Editar arquivo D:\Kafka\application\config\server1.properties
 - Setar broker id = 1 
-broker.id=1
+
+        broker.id=1
 
 - Descomentar a linha e setar porta 9092 para o server1
-listeners=PLAINTEXT://:9092
+
+        listeners=PLAINTEXT://:9092
 
 - Setar diretório de logs para o diretório criado para o server1
-D:/Kafka/tmp/kafka-logs/1
+
+        D:/Kafka/tmp/kafka-logs/1
 
 - Numero de partições por topico setar 2
-num.partitions=2 
+
+        num.partitions=2 
 
 # 5° Passo ->
 
 Editar arquivo D:\Kafka\application\config\server2.properties
 - Setar broker id = 2
-broker.id=2
+
+        broker.id=2
 
 - Descomentar a linha e setar porta 9093 para o server1
-listeners=PLAINTEXT://:9093
+
+        listeners=PLAINTEXT://:9093
 
 - Setar diretório de logs para o diretório criado para o server1
-D:/Kafka/tmp/kafka-logs/2
+
+        D:/Kafka/tmp/kafka-logs/2
 
 - Numero de partições por topico setar 2
-num.partitions=2 
+
+        num.partitions=2 
 
 # 6° Passo ->
 
 Editar o arquivo D:\Kafka\application\config\zookeeper.properties
 
 - Setar o diretorio de dados(datadir) para o zookeeper
-dataDir=D:/Kafka/data/zookeeper
+
+        dataDir=D:/Kafka/data/zookeeper
 
 # 7° Passo ->
 
