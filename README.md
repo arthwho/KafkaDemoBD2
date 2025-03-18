@@ -76,7 +76,7 @@ Editar arquivo D:\Kafka\application\config\server2.properties
 
         listeners=PLAINTEXT://:9093
 
-- Setar diretório de logs para o diretório criado para o server1
+- Setar diretório de logs para o diretório criado para o server2
 
         D:/Kafka/tmp/kafka-logs/2
 
@@ -128,6 +128,22 @@ Batch para criar topico product
 
     echo start D:\Kafka\application\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 2 --partitions 2 --topic product_topic > D:\Kafka\batch\Create_product_topic.bat
 
+---
+
+# 10° Passo -> 
+
+As versões mais novas do kafka não requerem a string "--zookeeper ....", sendo "--bootstrap-server ..." o certo.
+Alterar os arquivos
+
+Create Customer Topic
+
+    start D:\Kafka\application\bin\windows\kafka-topics.bat --create --topic customer_topic --bootstrap-server localhost:9092 --replication-factor 2 --partitions 2
+
+Create Product Topic
+
+    start D:\Kafka\application\bin\windows\kafka-topics.bat --create --topic product_topic  --bootstrap-server localhost:9092 --replication-factor 2 --partitions 2
+
+---
 
 # 10° Passo -> 
 
